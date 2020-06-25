@@ -13,11 +13,11 @@ export class UserService {
   constructor(private http: HttpClient) { }
 
   getUsers() {
-    return this.http.get(`${this.apiUrl}?per_page=40`);
+    return this.http.get(`${this.apiUrl}?since=1&per_page=100`);
   }
 
   getUser(id): Observable<User> {
-    return this.http.get<User>(
+    return this.http.get<User>( 
       `${this.apiUrl}/${id}?`
     );
   }

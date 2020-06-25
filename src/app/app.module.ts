@@ -8,6 +8,7 @@ import { UsersDetailComponent } from './users/users-detail/users-detail.componen
 import { ReposComponent } from './repos/repos.component';
 import { SearchUsersComponent } from './users/search-users/search-users.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 const routes: Routes = [{
     path: '',
@@ -35,6 +36,7 @@ const routes: Routes = [{
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    NgxPaginationModule,
     RouterModule.forRoot(routes)
   ],
   providers: [],
